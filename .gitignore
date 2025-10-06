@@ -84,7 +84,6 @@ logs/
 # Environment & Config
 # ========================
 .env
-.env.*
 *.ini
 *.yaml
 *.yml
