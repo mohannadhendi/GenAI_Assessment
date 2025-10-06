@@ -1,0 +1,107 @@
+# ========================
+# Python & Environment
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.log
+*.sqlite3
+
+# Conda / venv environments
+venv/
+.env/
+.venv/
+desk-agent/
+.env.example
+.env.bak
+*.env
+
+# ========================
+# IDE & Editor Files
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Bytecode / Cache
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.DS_Store
+
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Jupyter / Streamlit / Notebooks
+# ========================
+.ipynb_checkpoints/
+.streamlit/
+logs/
+notebooks/
+
+# ========================
+# Build & Distribution
+# ========================
+build/
+dist/
+*.egg-info/
+
+# ========================
+# Database & Secrets
+# ========================
+db/*.db
+db/*.sqlite
+db/__pycache__/
+db/*.bak
+db/seeds/
+*.sql
+
+# ========================
+# Models / LLM / Cache
+# ========================
+*.ckpt
+*.pt
+*.bin
+*.h5
+.cache/
+checkpoints/
+logs/
+
+# ========================
+# Environment & Config
+# ========================
+.env
+.env.*
+*.ini
+*.yaml
+*.yml
+config.json
+
+# ========================
+# Node / Frontend (if using React)
+# ========================
+app/node_modules/
+app/dist/
+app/build/
+
+# ========================
+# Temporary / Testing
+# ========================
+tmp/
+temp/
+test_results/
+coverage/
+__tests__/
