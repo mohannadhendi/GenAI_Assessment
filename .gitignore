@@ -105,3 +105,5 @@ temp/
 test_results/
 coverage/
 __tests__/
+
+*.pdf
