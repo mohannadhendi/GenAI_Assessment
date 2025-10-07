@@ -1,10 +1,9 @@
 from fastapi import FastAPI ,Depends
-from server.config import get_settings , Settings
 from server.db import Base, engine, SessionLocal
 from server.models import *
+from server.routes.base import router as base_router
+from server.routes.chat import router as chat_router
 
-
-settings = get_settings()
 
 app = FastAPI()
 
@@ -23,17 +22,9 @@ def startup_db_client():
 @app.on_event("shutdown")
 def shutdown_db_client():
     SessionLocal.close_all()
-    print("🔌 Database connection closed.")
+    print("Database connection closed.")
 
 
-
-@app.get("/")
-def root(app_settings:Settings = Depends(get_settings)):
-        app_name = app_settings.APP_NAME
-        app_version = app_settings.APP_VERSION
-
-        return {
-            "app_name": app_name, 
-            "app_version": app_version
-            }   
+app.include_router(base_router)
+app.include_router(chat_router)
 

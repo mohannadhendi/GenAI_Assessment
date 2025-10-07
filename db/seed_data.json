@@ -1,0 +1,37 @@
+{
+  "books": [
+    {"isbn": "9780132350884", "title": "Clean Code", "author": "Robert C. Martin", "price": 45.0, "stock": 10},
+    {"isbn": "9780201616224", "title": "The Pragmatic Programmer", "author": "Andrew Hunt", "price": 50.0, "stock": 5},
+    {"isbn": "9781491957660", "title": "Fluent Python", "author": "Luciano Ramalho", "price": 60.0, "stock": 4},
+    {"isbn": "9780134685991", "title": "Effective Java", "author": "Joshua Bloch", "price": 55.0, "stock": 6},
+    {"isbn": "9780262033848", "title": "Introduction to Algorithms", "author": "Thomas H. Cormen", "price": 80.0, "stock": 3},
+    {"isbn": "9780596007126", "title": "Head First Design Patterns", "author": "Eric Freeman", "price": 48.0, "stock": 7},
+    {"isbn": "9780131103627", "title": "The C Programming Language", "author": "Brian W. Kernighan", "price": 40.0, "stock": 5},
+    {"isbn": "9781617294136", "title": "Spring in Action", "author": "Craig Walls", "price": 52.0, "stock": 8},
+    {"isbn": "9781449355739", "title": "Python for Data Analysis", "author": "Wes McKinney", "price": 49.0, "stock": 9},
+    {"isbn": "9780134494166", "title": "Artificial Intelligence: A Modern Approach", "author": "Stuart Russell", "price": 85.0, "stock": 4}
+  ],
+
+  "customers": [
+    {"name": "John Doe", "email": "john@example.com"},
+    {"name": "Jane Smith", "email": "jane@example.com"},
+    {"name": "Ahmed Ali", "email": "ahmed@example.com"},
+    {"name": "Sara Johnson", "email": "sara@example.com"},
+    {"name": "Mohammed Khalid", "email": "mohammed@example.com"},
+    {"name": "Emily Brown", "email": "emily@example.com"}
+  ],
+
+  "orders": [
+    {"customer_id": 1},
+    {"customer_id": 2},
+    {"customer_id": 3},
+    {"customer_id": 1}
+  ],
+
+  "order_items": [
+    {"order_id": 1, "isbn": "9780132350884", "qty": 2},
+    {"order_id": 2, "isbn": "9780201616224", "qty": 1},
+    {"order_id": 3, "isbn": "9781449355739", "qty": 3},
+    {"order_id": 4, "isbn": "9781491957660", "qty": 1}
+  ]
+}
