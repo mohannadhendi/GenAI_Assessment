@@ -13,6 +13,8 @@ class Settings(BaseSettings):
     POSTGRES_DB_USER: str
     POSTGRES_DB_PASSWORD: str
 
+    API_URL: str
+
     class Config:
         env_file = ".env"
 

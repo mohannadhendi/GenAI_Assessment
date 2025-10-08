@@ -20,7 +20,6 @@ def load_system_prompt() -> str:
 
 
 def build_library_agent(verbose: bool = True):
-    """Build the ReAct-style Library Agent for LangChain 0.3.27."""
     settings = get_settings()
 
     llm = ChatOpenAI(

@@ -84,10 +84,13 @@ logs/
 # Environment & Config
 # ========================
 .env
+.env.*
 *.ini
 *.yaml
 *.yml
 config.json
+!.env.example
+
 
 # ========================
 # Node / Frontend (if using React)
